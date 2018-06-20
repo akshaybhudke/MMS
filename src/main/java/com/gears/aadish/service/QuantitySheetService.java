@@ -13,7 +13,7 @@ public class QuantitySheetService {
 	static QuantitySheetRepo quantitySheetRepo = new QuantitySheetRepo();
 	
 	public static void addDetails(String jobId, String jobName, int quantity,Date actualInDate, Date expectedOutDate) throws SQLException {
-		quantitySheetRepo.saveJobDetails();
+		quantitySheetRepo.saveJobDetails(jobId,jobName, quantity,actualInDate, expectedOutDate);
 		
 		
 	}
